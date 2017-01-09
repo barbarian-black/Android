@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Whack</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="start">Start</string>
+    <string name="modes">Modes</string>
+    <string name="score">Scores</string>
+    <string name="title_activity_game_activity">Game_activity</string>
+    <string name="title_activity_game__exit_">Game_Exit_Activity</string>
+    <string name="title_activity_capture_face">Capture_face</string>
+    
+    <string name="mode1">Time Attack</string>
+    <string name="mode2">Mole Miss</string>
+    <string name="mode3">Extreme</string>
+    <string name="save_mode">Save Mode</string>
+    
+    <string name="min_score">0</string>
+    <string name="max_left">20</string>
+
+</resources>

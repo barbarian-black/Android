@@ -1,0 +1,200 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.headsmasher.MainActivity" >
+
+    <TextView
+        android:id="@+id/game_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/min_score"
+        android:textColor="#012325"
+        android:textSize="24sp" />
+    
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="31dp"
+        android:layout_toRightOf="@+id/game_score"
+        android:text="00:00"
+        android:textSize="24sp" />
+
+    <TableLayout
+        android:id="@+id/board"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_below="@id/game_score" >
+        
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/hole1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp" 
+                android:layout_weight="1"
+                android:background="@drawable/ani0"
+                android:clickable="false"
+                android:onClick="update_score"/>
+            
+            <Button
+                android:id="@+id/hole2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/ani0"
+                android:clickable="false"
+                android:onClick="update_score" />
+            
+            <Button
+                android:id="@+id/hole3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/ani0"
+                android:clickable="false"
+                android:onClick="update_score" />
+        </TableRow>  
+        
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1" >  
+ 
+            <Button
+                android:id="@+id/hole4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/ani0"
+                android:clickable="false"
+                android:onClick="update_score" />
+
+            <Button
+                android:id="@+id/hole5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/ani0"
+                android:clickable="false"
+                android:onClick="update_score" />
+ 
+            <Button
+                android:id="@+id/hole6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/ani0"
+                android:clickable="false"
+                android:onClick="update_score" />
+            
+        </TableRow>  
+        
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1">  
+ 
+            <Button
+                android:id="@+id/hole7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/ani0"
+                android:clickable="false"
+                android:onClick="update_score" />
+ 
+            <Button
+                android:id="@+id/hole8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/ani0"
+                android:clickable="false"
+                android:onClick="update_score" />
+
+            <Button
+                android:id="@+id/hole9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/ani0"
+                android:onClick="update_score" />
+            
+         </TableRow>  
+         
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1">
+ 
+            <Button
+                android:id="@+id/hole10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/ani0"
+                android:clickable="false"
+                android:onClick="update_score" />
+ 
+            <Button
+                android:id="@+id/hole11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/ani0"
+                android:clickable="false"
+                android:onClick="update_score" />
+ 
+            <Button
+                android:id="@+id/hole12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/ani0"
+                android:clickable="false"
+                android:onClick="update_score" />
+ 
+            
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/moles_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/time"
+        android:layout_alignBottom="@+id/time"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/time"
+        android:text="@string/max_left"
+        android:textSize="24sp" />
+
+</RelativeLayout>
